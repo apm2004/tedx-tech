@@ -131,6 +131,25 @@ npm start
 
 ---
 
+## 🚀 Deployed URL
+
+The live backend API is deployed on **Railway** and can be accessed here:
+
+🔗 **[https://tedx-tech-production.up.railway.app/](https://tedx-tech-production.up.railway.app/)**
+
+### ✅ Available API Endpoints
+
+| Endpoint                         | Method | Description                          |
+|----------------------------------|--------|--------------------------------------|
+| `/`                              | GET    | Health check                         |
+| `/api/signup`                    | POST   | Register a new user                  |
+| `/api/login`                     | POST   | Login with email and password        |
+| `/api/dashboard`                 | GET    | Protected route (JWT required)       |
+| `/api/admin/dashboard`           | GET    | Admin-only protected route           |
+| `/api/refresh-token`             | POST   | Refresh JWT using refresh token      |
+| `/api/logout`                    | POST   | Logout and invalidate refresh token  |
+
+
 ## 👨‍💻 Author
 
 **Adithya Pramod Menon**  
