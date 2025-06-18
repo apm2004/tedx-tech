@@ -34,6 +34,10 @@ app.use('/api', googleAuthRoutes);
 app.use('/api', protectedRoutes);
 app.use('/api', adminRoutes);
 
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
+
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
